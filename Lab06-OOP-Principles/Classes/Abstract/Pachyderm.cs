@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab06_OOP_Principles.Classes.Abstract
 {
-    public abstract class Pachyderm
+    public abstract class Pachyderm : Animal
     {
         public abstract bool IsDomestic { get; set; }
         public abstract bool CanBeRidden { get; set; }
