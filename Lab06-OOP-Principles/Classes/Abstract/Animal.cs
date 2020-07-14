@@ -19,6 +19,14 @@ namespace Lab06_OOP_Principles.Classes.Abstract
         public abstract string MakeSound();
 
         /// <summary>
+        /// Abstract method that returns a string representing how the animal responds to danger.
+        /// </summary>
+        /// <returns>
+        /// string: a representation of the animal object's response to danger
+        /// </returns>
+        public abstract string RespondToDanger();
+
+        /// <summary>
         /// Virtual method whose that returns a string representation of the concrete animal's movement.
         /// </summary>
         /// <returns>

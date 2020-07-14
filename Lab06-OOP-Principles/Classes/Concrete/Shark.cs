@@ -8,12 +8,37 @@ namespace Lab06_OOP_Principles.Classes.Concrete
 {
     public class Shark : Fish
     {
-        public override int NumberOfFins { get => 5; set => throw new NotImplementedException(); }
-        public override decimal SwimSpeed { get => 25.0m; set => throw new NotImplementedException(); }
-        public override bool IsBottomFeeder { get => false; set => throw new NotImplementedException(); }
-        public override string Name { get => "Shark"; set => throw new NotImplementedException(); }
-        public override string Diet { get => "carnivore"; set => throw new NotImplementedException(); }
-        public override decimal AverageAdultWeight { get => 500.0m; set => throw new NotImplementedException(); }
+        private int _numberOfFins = 5;
+        private decimal _swimSpeed = 25.0m;
+        private bool _isBottomFeeder = false;
+        private string _name = "Shark";
+        private string _diet = "carnivore";
+        private decimal _averageAdultWeight = 500.0m;
+        
+        public override int NumberOfFins { 
+            get => _numberOfFins; 
+            set => _numberOfFins = value; 
+        }
+        public override decimal SwimSpeed { 
+            get => _swimSpeed; 
+            set => _swimSpeed = value; 
+        }
+        public override bool IsBottomFeeder { 
+            get => _isBottomFeeder; 
+            set => _isBottomFeeder = value; 
+        }
+        public override string Name { 
+            get => _name; 
+            set => _name = value; 
+        }
+        public override string Diet { 
+            get => _diet; 
+            set => _diet = value; 
+        }
+        public override decimal AverageAdultWeight { 
+            get => _averageAdultWeight; 
+            set => _averageAdultWeight = value; 
+        }
 
         /// <summary>
         /// Method that overrides the abstract parent class method to give a string representation a shark's sound.
@@ -35,6 +60,11 @@ namespace Lab06_OOP_Principles.Classes.Concrete
         public override string Move()
         {
             return "Swim swim";
+        }
+
+        public override string RespondToDanger()
+        {
+            return "Gnaw gnaw gnaw";
         }
     }
 }
