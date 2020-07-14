@@ -1,6 +1,7 @@
 using System;
 using Xunit;
-using Lab06_OOP_Principles;
+using Lab06_OOP_Principles.Classes.Abstract;
+using Lab06_OOP_Principles.Classes.Concrete;
 
 namespace Lab06UnitTesting
 {
@@ -59,12 +60,25 @@ namespace Lab06UnitTesting
             Assert.Equal("Rumble rumble", hippoCharge);
         }
 
-        [Theory]
-        public void CheckMoves(Animal animal)
+        [Fact]
+        public void CheckDogTypeOfMoves()
         {
-            Type type = typeof animal.Move();
+            Dog dog = new Dog();
+            Assert.IsType<string>(dog.Move());
+        }
 
-            Assert.Equal(Type.GetType("string"), type);
+        [Fact]
+        public void CheckRhinoTypeOfCanBeRidden()
+        {
+            Rhino rhino = new Rhino();
+            Assert.IsType<bool>(rhino.CanBeRidden);
+        }
+
+        [Fact]
+        public void CheckSharkTypeOfAverageAdultWeight()
+        {
+            Shark shark = new Shark();
+            Assert.IsType<decimal>(shark.AverageAdultWeight);
         }
     }
 }

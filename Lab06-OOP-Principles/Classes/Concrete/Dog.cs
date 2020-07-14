@@ -22,7 +22,7 @@ namespace Lab06_OOP_Principles.Classes.Concrete
 
         public override string Move()
         {
-            return "Tippity tap";
+            return "Tippity Tap";
         }
     }
 }
