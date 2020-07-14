@@ -15,11 +15,19 @@ namespace Lab06_OOP_Principles.Classes.Concrete
         public override string Name { get => "Dog"; set => throw new NotImplementedException(); }
         public override decimal AverageAdultWeight { get => 20.0m; set => throw new NotImplementedException(); }
 
+        /// <summary>
+        /// Makes a dog noise
+        /// </summary>
+        /// <returns>string expressing a dog noise</returns>
         public override string MakeSound()
         {
             return "Woof woof";
         }
 
+        /// <summary>
+        /// Makes the sound of a dog walking
+        /// </summary>
+        /// <returns>string expressing a dog moving</returns>
         public override string Move()
         {
             return "Tippity Tap";

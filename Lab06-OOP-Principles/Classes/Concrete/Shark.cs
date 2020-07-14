@@ -15,11 +15,23 @@ namespace Lab06_OOP_Principles.Classes.Concrete
         public override string Diet { get => "carnivore"; set => throw new NotImplementedException(); }
         public override decimal AverageAdultWeight { get => 500.0m; set => throw new NotImplementedException(); }
 
+        /// <summary>
+        /// Method that overrides the abstract parent class method to give a string representation a shark's sound.
+        /// </summary>
+        /// <returns>
+        /// string: a representation of a shark's sound
+        /// </returns>
         public override string MakeSound()
         {
             return "Dun Dun Dun Dun DUN DUN";
         }
 
+        /// <summary>
+        /// Method that overrides the virtual parent class method to give a string representation a shark's movement.
+        /// </summary>
+        /// <returns>
+        /// string: a representation of a shark's movement
+        /// </returns>
         public override string Move()
         {
             return "Swim swim";

@@ -13,18 +13,18 @@ namespace Lab06_OOP_Principles.Classes.Abstract
         public abstract bool HasTrunk { get; set; }
 
         /// <summary>
-        /// 
+        /// Returns a string expressing the pachyderm charging
         /// </summary>
-        /// <returns></returns>
+        /// <returns>string expressing sound of animal charging</returns>
         public virtual string Charge()
         {
             return "Rumble rumble";
         }
 
         /// <summary>
-        /// 
+        /// Returns a string expressing the pachyderm rolling around
         /// </summary>
-        /// <returns></returns>
+        /// <returns>string expressing sound of animal rolling around</returns>
         public virtual string RollAround()
         {
             return "Roll roll";

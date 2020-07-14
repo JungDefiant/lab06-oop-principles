@@ -7,6 +7,9 @@ namespace Lab06UnitTesting
 {
     public class UnitTest
     {
+        /// <summary>
+        /// Checks whether a Shark object returns the correct output from the MakeSound() method and demonstrates inheritance from Animal class
+        /// </summary>
         [Fact]
         public void CheckSharkMakesSound()
         {
@@ -20,6 +23,9 @@ namespace Lab06UnitTesting
             Assert.Equal("Dun Dun Dun Dun DUN DUN", sharkNoise);
         }
 
+        /// <summary>
+        /// Checks whether a Dog object returns the correct output from its Move() method and demonstrates inheritance from Animal class
+        /// </summary>
         [Fact]
         public void CheckDogWalks()
         {
@@ -30,6 +36,9 @@ namespace Lab06UnitTesting
             Assert.Equal("Tippity Tap", dogMove);
         }
 
+        /// <summary>
+        /// Checks whether a Wolf object returns the correct output from the Move() method and demonstrates inheritance from Animal class
+        /// </summary>
         [Fact]
         public void CheckWolfMove()
         {
@@ -40,6 +49,9 @@ namespace Lab06UnitTesting
             Assert.Equal("Slinking", wolfMove);
         }
 
+        /// <summary>
+        /// Checks whether a Rhino object returns the correct output from the MakeSound() method and demonstrates inheritance from Animal class
+        /// </summary>
         [Fact]
         public void CheckRhinoMoos()
         {
@@ -50,6 +62,9 @@ namespace Lab06UnitTesting
             Assert.Equal("Moooo", rhinoSound);
         }
 
+        /// <summary>
+        /// Checks whether a Hippo object returns the correct output from the Charge() method and demonstrates inheritance from Pachyderm class
+        /// </summary>
         [Fact]
         public void CheckHippoCharge()
         {
@@ -60,6 +75,9 @@ namespace Lab06UnitTesting
             Assert.Equal("Rumble rumble", hippoCharge);
         }
 
+        /// <summary>
+        /// Checks whether a Dog object's Move() method returns a string
+        /// </summary>
         [Fact]
         public void CheckDogTypeOfMoves()
         {
@@ -67,6 +85,9 @@ namespace Lab06UnitTesting
             Assert.IsType<string>(dog.Move());
         }
 
+        /// <summary>
+        /// Checks whether a Rhino object's CanBeRidden property returns a bool
+        /// </summary>
         [Fact]
         public void CheckRhinoTypeOfCanBeRidden()
         {
@@ -74,6 +95,9 @@ namespace Lab06UnitTesting
             Assert.IsType<bool>(rhino.CanBeRidden);
         }
 
+        /// <summary>
+        /// Checks whether a Shark object's AverageAdultWeight property returns a decimal
+        /// </summary>
         [Fact]
         public void CheckSharkTypeOfAverageAdultWeight()
         {

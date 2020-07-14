@@ -11,33 +11,41 @@ namespace Lab06_OOP_Principles.Classes.Abstract
         public abstract decimal AverageAdultWeight { get; set; }
 
         /// <summary>
-        /// 
+        /// Abstract method whose concrete implementation will return a string representation of the sound the animal makes.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        /// string: a representation of the concrete animal object's sound
+        /// </returns>
         public abstract string MakeSound();
 
         /// <summary>
-        /// 
+        /// Virtual method whose that returns a string representation of the concrete animal's movement.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        /// string: a representation of the concrete animal object's movement
+        /// </returns>
         public virtual string Move()
         {
             return "Moves hither and dither";
         }
 
         /// <summary>
-        /// 
+        /// Virtual method that returns a string representation of the concrete animal's eating.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        /// string: a representation of the concrete animal object's eating
+        /// </returns>
         public virtual string Eat()
         {
             return $"YUM! I sure do love to be a {Diet}!";
         }
 
         /// <summary>
-        /// 
+        /// Virtual method that returns a string representation of the concrete animal's Sleep.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        /// string: a representation of the concrete animal object's sleeping
+        /// </returns>
         public virtual string Sleep()
         {
             return $"The sun is down. Good night!";

@@ -11,19 +11,19 @@ namespace Lab06_OOP_Principles.Classes.Abstract
         public abstract bool IsBottomFeeder { get; set; }
 
         /// <summary>
-        /// 
+        /// Returns a string expressing the fish breathing water
         /// </summary>
-        /// <returns></returns>
+        /// <returns>string expressing the fish breathing water</returns>
         public virtual string BreatheUnderwater()
         {
             return "Bloop bloop";
         }
 
         /// <summary>
-        /// 
+        /// Checks whether fish finds a school
         /// </summary>
         /// <param name="foundSchool"></param>
-        /// <returns></returns>
+        /// <returns>bool indicating whether fish found school</returns>
         public virtual bool FindASchool(bool foundSchool)
         {
             return foundSchool;

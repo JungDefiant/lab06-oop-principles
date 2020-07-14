@@ -16,11 +16,19 @@ namespace Lab06_OOP_Principles.Classes.Concrete
         public override string Diet { get => "herbivore"; set => throw new NotImplementedException(); }
         public override decimal AverageAdultWeight { get => 1500.0m; set => throw new NotImplementedException(); }
 
+        /// <summary>
+        /// Makes a hippo noise
+        /// </summary>
+        /// <returns>string expressing a hippo noise</returns>
         public override string MakeSound()
         {
             return "Hippo noises";
         }
 
+        /// <summary>
+        /// Makes the sound of a hippo moving
+        /// </summary>
+        /// <returns>string expressing a hippo moving</returns>
         public override string Move()
         {
             return "Waddle waddle";
