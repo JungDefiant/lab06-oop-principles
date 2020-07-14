@@ -19,6 +19,10 @@ namespace Lab06_OOP_Principles
             Console.WriteLine(dog.Sniff());
             Console.WriteLine(dog.Swim());
             Console.WriteLine(dog.MarkTerritory());
+            Console.WriteLine(dog.RespondToDanger());
+            Console.WriteLine($"A {dog.Name} has {dog.NumOfLegs} legs.");
+            dog.HasFur = true;  // This will turn dog.HasFur to false due to HasFur implementation
+            Console.WriteLine($"A {dog.Name} has fur? {dog.HasFur}");
 
             Console.WriteLine("\nWolf inherits from Animal and Canine. See the wolf do things:");
             Wolf wolf = new Wolf();
@@ -29,6 +33,9 @@ namespace Lab06_OOP_Principles
             Console.WriteLine(wolf.Sniff());
             Console.WriteLine(wolf.Swim());
             Console.WriteLine(wolf.MarkTerritory());
+            Console.WriteLine(wolf.RespondToDanger());
+            Console.WriteLine($"A {wolf.Name} has {wolf.NumOfLegs} legs.");
+            Console.WriteLine($"A {wolf.Name} has fur? {wolf.HasFur}");
 
             Console.WriteLine("\nFish are Animals that can Breathe Underwater and Find A School.\n");
             Console.WriteLine("\nShark inherits from Animal and Fish. See the shark do things:");
@@ -39,6 +46,7 @@ namespace Lab06_OOP_Principles
             Console.WriteLine(shark.MakeSound());
             Console.WriteLine(shark.BreatheUnderwater());
             Console.WriteLine("Find a school? " + shark.FindASchool(false));
+            Console.WriteLine(shark.RespondToDanger());
 
             Console.WriteLine("\nPachyderms are Animals that can Charge and Roll Around.\n");
             Console.WriteLine("\nRhino inherits from Animal and Pachyderm. See the rhino do things:");
@@ -49,6 +57,7 @@ namespace Lab06_OOP_Principles
             Console.WriteLine(rhino.MakeSound());
             Console.WriteLine(rhino.Charge());
             Console.WriteLine(rhino.RollAround());
+            Console.WriteLine(rhino.RespondToDanger());
 
             Console.WriteLine("\nHippo inherits from Animal and Pachyderm. See the hippo do things:");
             Hippo hippo = new Hippo();
@@ -58,6 +67,7 @@ namespace Lab06_OOP_Principles
             Console.WriteLine(hippo.MakeSound());
             Console.WriteLine(hippo.Charge());
             Console.WriteLine(hippo.RollAround());
+            Console.WriteLine(hippo.RespondToDanger());
         }
     }
 }

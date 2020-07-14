@@ -6,9 +6,24 @@ namespace Lab06_OOP_Principles.Classes.Abstract
 {
     public abstract class Canine : Animal
     {
+        protected string _diet = "omnivore";
         public override string Diet { 
-            get => "omnivore"; 
-            set => throw new NotImplementedException(); 
+            get => _diet; 
+            set => _diet = value; 
+        }
+
+        protected bool _hasFur = true;
+        public virtual bool HasFur
+        {
+            get => _hasFur;
+            set => _hasFur = value;
+        }
+
+        protected int _numOfLegs = 4;
+        public virtual int NumOfLegs
+        {
+            get => _numOfLegs;
+            set => _numOfLegs = value;
         }
 
         public abstract bool LivesInPack { get; set; }

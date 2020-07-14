@@ -7,13 +7,49 @@ namespace Lab06_OOP_Principles.Classes.Concrete
 {
     public class Wolf : Canine
     {
-        public override bool LivesInPack { get => true; set => throw new NotImplementedException(); }
-        public override bool IsDomesticated { get => false; set => throw new NotImplementedException(); }
-        public override bool HasFloppyEars { get => false; set => throw new NotImplementedException(); }
-        public override bool HasCurlyTail { get => true; set => throw new NotImplementedException(); }
-        public override bool CanSwim { get => true; set => throw new NotImplementedException(); }
-        public override string Name { get => "Wolf"; set => throw new NotImplementedException(); }
-        public override decimal AverageAdultWeight { get => 25.0m; set => throw new NotImplementedException(); }
+        private bool _livesInPack = true;
+        private bool _isDomesticated = false;
+        private bool _hasFloppyEars = false;
+        private bool _hasCurlyTail = true;
+        private bool _canSwim = true;
+        private string _name = "Wolf";
+        private decimal _averageAdultWeight = 25.0m;
+
+        public override bool LivesInPack
+        {
+            get => _livesInPack;
+            set => _livesInPack = value;
+        }
+        public override bool IsDomesticated
+        {
+            get => _isDomesticated;
+            set => _isDomesticated = value;
+        }
+        public override bool HasFloppyEars
+        {
+            get => _hasFloppyEars;
+            set => _hasFloppyEars = value;
+        }
+        public override bool HasCurlyTail
+        {
+            get => _hasCurlyTail;
+            set => _hasCurlyTail = value;
+        }
+        public override bool CanSwim
+        {
+            get => _canSwim;
+            set => _canSwim = value;
+        }
+        public override string Name
+        {
+            get => _name;
+            set => _name = value;
+        }
+        public override decimal AverageAdultWeight
+        {
+            get => _averageAdultWeight;
+            set => _averageAdultWeight = value;
+        }
 
         /// <summary>
         /// Method that overrides the virtual parent class method to give a string representation a wolf's sound.
@@ -35,6 +71,15 @@ namespace Lab06_OOP_Principles.Classes.Concrete
         public override string Move()
         {
             return "Slinking";
+        }
+
+        /// <summary>
+        /// Method that overrides the abstract RespondToDanger() method and returns a string that represents a wolf responding to danger
+        /// </summary>
+        /// <returns>string: a representation of a wolf responding to danger</returns>
+        public override string RespondToDanger()
+        {
+            return "Grrrrrr!";
         }
     }
 }

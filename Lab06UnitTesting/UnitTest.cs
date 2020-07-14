@@ -24,6 +24,19 @@ namespace Lab06UnitTesting
         }
 
         /// <summary>
+        /// Checks whether a Shark object returns the correct output from the RespondToDanger() method and demonstrates inheritance from Animal class
+        /// </summary>
+        [Fact]
+        public void CheckSharkRespondToDanger()
+        {
+            Shark shark = new Shark();
+
+            string sharkResponse = shark.RespondToDanger();
+
+            Assert.Equal("Gnaw gnaw gnaw", sharkResponse);
+        }
+
+        /// <summary>
         /// Checks whether a Dog object returns the correct output from its Move() method and demonstrates inheritance from Animal class
         /// </summary>
         [Fact]
@@ -34,6 +47,19 @@ namespace Lab06UnitTesting
             string dogMove = dog.Move();
 
             Assert.Equal("Tippity Tap", dogMove);
+        }
+
+        /// <summary>
+        /// Checks whether a Dog object returns the correct output from the MakeSound() method and demonstrates inheritance from Animal class
+        /// </summary>
+        [Fact]
+        public void CheckDogMakesSound()
+        {
+            Dog dog = new Dog();
+
+            string dogSound = dog.MakeSound();
+
+            Assert.Equal("Woof woof", dogSound);
         }
 
         /// <summary>
@@ -50,6 +76,19 @@ namespace Lab06UnitTesting
         }
 
         /// <summary>
+        /// Checks whether a Wolf object returns the correct output from the RespondToDanger() method and demonstrates inheritance from Animal class
+        /// </summary>
+        [Fact]
+        public void CheckWolfRespondToDanger()
+        {
+            Wolf wolf = new Wolf();
+
+            string wolfResponse = wolf.RespondToDanger();
+
+            Assert.Equal("Grrrrrr!", wolfResponse);
+        }
+
+        /// <summary>
         /// Checks whether a Rhino object returns the correct output from the MakeSound() method and demonstrates inheritance from Animal class
         /// </summary>
         [Fact]
@@ -63,6 +102,19 @@ namespace Lab06UnitTesting
         }
 
         /// <summary>
+        /// Checks whether a Rhino object returns the correct output from the Move() method and demonstrates inheritance from Animal class
+        /// </summary>
+        [Fact]
+        public void CheckRhinoMove()
+        {
+            Rhino rhino = new Rhino();
+
+            string rhinoMove = rhino.Move();
+
+            Assert.Equal("Rumble but slower", rhinoMove);
+        }
+
+        /// <summary>
         /// Checks whether a Hippo object returns the correct output from the Charge() method and demonstrates inheritance from Pachyderm class
         /// </summary>
         [Fact]
@@ -73,6 +125,19 @@ namespace Lab06UnitTesting
             string hippoCharge = hippo.Charge();
 
             Assert.Equal("Rumble rumble", hippoCharge);
+        }
+
+        /// <summary>
+        /// Checks whether a Hippo object returns the correct output from the RespondToDanger() method and demonstrates inheritance from Animal class
+        /// </summary>
+        [Fact]
+        public void CheckHippoRespondToDanger()
+        {
+            Hippo hippo = new Hippo();
+
+            string hippoResponse = hippo.RespondToDanger();
+
+            Assert.Equal("Shows off those mean chompers!", hippoResponse);
         }
 
         /// <summary>
