@@ -67,6 +67,10 @@ namespace Lab06_OOP_Principles.Classes.Concrete
             return "Rumble but slower";
         }
 
+        /// <summary>
+        /// Method that returns a string representing a rhino responding to danger
+        /// </summary>
+        /// <returns>string that represents a rhino responding to danger</returns>
         public override string RespondToDanger()
         {
             return "Rears up to charge!";

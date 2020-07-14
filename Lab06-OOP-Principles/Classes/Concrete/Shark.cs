@@ -62,6 +62,10 @@ namespace Lab06_OOP_Principles.Classes.Concrete
             return "Swim swim";
         }
 
+        /// <summary>
+        /// Method that returns a string representing a shark responding to danger
+        /// </summary>
+        /// <returns>string representing a shark responding to danger</returns>
         public override string RespondToDanger()
         {
             return "Gnaw gnaw gnaw";

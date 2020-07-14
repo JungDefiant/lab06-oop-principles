@@ -75,6 +75,10 @@ namespace Lab06_OOP_Principles.Classes.Concrete
             return "Waddle waddle";
         }
 
+        /// <summary>
+        /// Method that returns a string expressing a hippo responding to danger
+        /// </summary>
+        /// <returns>string expressing a hippo responding to danger</returns>
         public override string RespondToDanger()
         {
             return "Shows off those mean chompers!";

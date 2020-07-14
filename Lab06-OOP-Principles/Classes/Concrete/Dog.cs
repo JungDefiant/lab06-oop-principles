@@ -68,6 +68,10 @@ namespace Lab06_OOP_Principles.Classes.Concrete
             return "Tippity Tap";
         }
 
+        /// <summary>
+        /// Method that returns a string representing a dog responding to danger
+        /// </summary>
+        /// <returns>string expressing a dog responding to danger</returns>
         public override string RespondToDanger()
         {
             return "Bork bork bork!";

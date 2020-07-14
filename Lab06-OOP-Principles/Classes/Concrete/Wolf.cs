@@ -73,6 +73,10 @@ namespace Lab06_OOP_Principles.Classes.Concrete
             return "Slinking";
         }
 
+        /// <summary>
+        /// Method that overrides the abstract RespondToDanger() method and returns a string that represents a wolf responding to danger
+        /// </summary>
+        /// <returns>string: a representation of a wolf responding to danger</returns>
         public override string RespondToDanger()
         {
             return "Grrrrrr!";
