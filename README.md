@@ -1,4 +1,4 @@
-# Lab 07 - OOP Principles
+# Lab 06 & 07 - OOP Principles
 
 ## Authors
 
